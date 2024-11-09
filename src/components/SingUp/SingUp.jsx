@@ -3,6 +3,7 @@ import { auth } from "./../../firbase/firbase.init";
 import { useState } from "react";
 import LogOut from "./../LogOut/LogOut";
 import LoginX from "../LoginX/LoginX";
+import GitHubLogin from "../GitHubLogin/GitHubLogin";
 
 const googleProvider = new GoogleAuthProvider();
 
@@ -33,6 +34,7 @@ function SingUp() {
           </button>
           
           <LoginX set={setUser} user={user}></LoginX>
+          <GitHubLogin></GitHubLogin>
 
           </div>
         </>
